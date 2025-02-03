@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For My Beautiful Saumya 🌸</title>
+  <style>
+    /* Import the modern, clean font (Apple-inspired) */
+    @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;700&display=swap');
+
+    /* Reset default margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      transition: background-color 0.5s ease;
+    }
+
+    .container,
+    .letter-container {
+      max-width: 600px;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+      color: #222;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 1.5em;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #0071e3;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #005bb5;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    /* Letter Page Styles */
+    .letter-container {
+      display: none;
+      /* Using the same clean font as the home page */
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #ffeef8;
+      color: #333;
+      line-height: 1.8;
+      position: relative;
+      text-align: left;
+    }
+
+    .letter-container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .letter-container textarea {
+      width: 100%;
+      min-height: 300px;
+      border: none;
+      background: transparent;
+      font-family: inherit;
+      font-size: 1.2em;
+      resize: none;
+      padding: 20px;
+      outline: none;
+      color: #333;
+    }
+
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #0071e3;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-size: 0.9em;
+    }
+
+    .back-btn:hover {
+      background: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <!-- Home Page Container -->
+  <div class="container" id="home">
+    <h1>Hello, Saumya Ji!</h1>
+    <p>
+      For the most beautiful, cute, hot, sexy, caring, smart
+      and loving wife ever.
+      👉👈I am sorry meri Jaan ♥️    </p>
+    <button class="btn" id="exploreBtn">Aage badhiye</button>
+    <footer>Prashant ♥ Saumya</footer>
+  </div>
+
+  <!-- Letter Page Container -->
+  <div class="letter-container" id="letterPage">
+    <button class="back-btn" id="backBtn">Back</button>
+    <h1>for you, Saumya</h1>
+    <textarea>
+My pyari cutie, I am sorry, I was dumb, I was dumb not to realise no one can love me as much as you, I was dumb not to realise that you want only good for me. I want to spend every second, every hour of my life with you. Chalo ye sab to formal hai but there’s no excuse for the way I acted, and I know that my actions hurt you — something I never wanted to do. You mean the world to me, and I’ve always tried to be someone who you can rely on and trust. I realize that in my words or actions, I let you down, and that weighs heavily on my heart. I want you to know that I take full responsibility for the mistake I made. You deserve to feel respected, loved, and valued at all times, and I fell short of that standard. For that, I am truly sorry. I want you to know that I am committed to doing better. I promise I will put in the effort to ensure this doesn’t happen again. Your happiness and our relationship are incredibly important to me, and I will do whatever it takes to rebuild your trust and show you how much you mean to me. Forgive your cuta, I love you more❤️
+    </textarea>
+  </div>
+
+  <script>
+    const exploreBtn = document.getElementById('exploreBtn');
+    const backBtn = document.getElementById('backBtn');
+    const home = document.getElementById('home');
+    const letterPage = document.getElementById('letterPage');
+
+    // Show the letter page when "Explore More" is clicked
+    exploreBtn.addEventListener('click', () => {
+      home.style.display = 'none';
+      letterPage.style.display = 'block';
+      // Change the background to match the letter page's soft pink hue
+      document.body.style.background = '#ffeef8';
+    });
+
+    // Go back to the home page when "Back" is clicked
+    backBtn.addEventListener('click', () => {
+      letterPage.style.display = 'none';
+      home.style.display = 'block';
+      document.body.style.background = 'linear-gradient(135deg, #f5f7fa, #c3cfe2)';
+    });
+  </script>
+</body>
+</html>
